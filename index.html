@@ -6,34 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body>
 
-    <header>
+    <header onclick=" toggleDarkMode()">
         <h1>Mon Portfolio</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="Parcours.html">Parcours académiques</a></li>
-                <li><a href="experiences.html">Expériences</a></li>
+                <li><a href="Parcours.html" >Parcours académiques</a></li>
+                <li><a href="experiences.html" >Expériences</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <button id="toggle-dark-mode" onclick="toggleDarkMode()">Mode sombre</button> 
         <section>
             <h2>Bienvenue sur mon portfolio</h2>
-        </section>
-        <img src="iradphoto.png" alt="perdu" style="width:300px;height:500px;">
-
+            <section id="about-me" class="corner-section">
+                
+                <h2>À propos de moi</h2>
+                <p>Voici une brève introduction sur moi-même.</p>
+                <button id="show-more-btn" onclick="toggleMoreInfo()">Voir plus</button>
+                <div id="more-info" style="display: none;">
+                    <pre id ="moi">Je m'appelle Irad Hachaichi, j'ai 21 ans, et je suis né le 16/05/2002.
+                         Actuellement, je suis étudiant en ingénierie informatique.</pre>
+                    
+                
+                </div>
+            </section>
+        <img id="portfolioImage" src="iradphoto.png" alt="perdu" style="width:300px;height:500px;">
     </main>
 
-    <footer>
+    <footer >
         <p>&copy; 2023 Irad_Hachaichi</p>
     </footer>
+
+    
+    <script src="index.js"></script>
 
 </body>
 

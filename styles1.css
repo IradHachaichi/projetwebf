@@ -62,3 +62,22 @@ footer {
     bottom: 0;
     width: 100%;
 }
+button#toggle-dark-mode {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: fixed;
+    top: 35px;
+    left: 0;
+}
+nav ul li a:hover {
+    color: hsl(230, 64%, 34%);
+}
+
+body.dark-mode {
+    background-color: #111;
+    color: #fff;
+}

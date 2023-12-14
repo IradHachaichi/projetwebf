@@ -57,3 +57,45 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+#welcome-section {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+#show-more-info-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#more-info {
+    margin-top: 20px;
+}
+#moi{
+    font-family: 'Arial';
+
+}
+body.dark-mode {
+    background-color: #111;
+    color: #fff;
+}
+
+button#toggle-dark-mode {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: fixed;
+    top: 35px;
+    left: 0;
+}
+
+nav ul li a:hover {
+    color: hsl(230, 64%, 34%);
+}
+
